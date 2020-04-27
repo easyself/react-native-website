@@ -19,7 +19,7 @@ else
 fi
 
 git add -A
-git commit -m "${msg}"
+git commit -m "coding"
 git push -f $codingUrl master # 推送到coding
 
 # deploy to github

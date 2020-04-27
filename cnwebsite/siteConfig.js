@@ -36,7 +36,7 @@ const siteConfig = {
   users: [],
   communityRepos,
   editUrl:
-    '//easyself.github.com/react-native-website/blob/production/cndocs/',
+    '//www.github.com/easyself/react-native-website/blob/production/cndocs/',
   headerLinks: [
     {doc: 'getting-started', label: '文档'},
     // { blog: true, label: "博客" },

@@ -60,7 +60,7 @@
                 };
               }
             });
-        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="//easyself.github.com/react-native-website/blob/production/cndocs/vibration.md" target="_blank" rel="noreferrer noopener">帮助改进此文档</a><h1 id="__docusaurus" class="postHeaderTitle">Vibration</h1></header><article><div><span><p>本模块导出函数<code>Vibration.vibrate()</code>用于控制设备震动。震动触发是异步的，也就是说这个函数会立即返回而非等待震动结束。</p>
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="//www.github.com/easyself/react-native-website/blob/production/cndocs/vibration.md" target="_blank" rel="noreferrer noopener">帮助改进此文档</a><h1 id="__docusaurus" class="postHeaderTitle">Vibration</h1></header><article><div><span><p>本模块导出函数<code>Vibration.vibrate()</code>用于控制设备震动。震动触发是异步的，也就是说这个函数会立即返回而非等待震动结束。</p>
 <p>在不支持震动的设备上（如iOS模拟器），调用此方法没有任何效果。</p>
 <p><strong>注意</strong>对于android来说需要在<code>AndroidManifest.xml</code>中添加<code>&lt;uses-permission android:name=&quot;android.permission.VIBRATE&quot;/&gt;</code>权限。</p>
 <p>由于<strong>在iOS上无法设置震动的持续时间</strong>，所以这一API在两个平台上的使用和表现有所差异。In Android, if <code>pattern</code> is a number, it specifies the vibration duration in ms. If <code>pattern</code> is an array, those odd indices are the vibration duration, while the even ones are the separation time.</p>

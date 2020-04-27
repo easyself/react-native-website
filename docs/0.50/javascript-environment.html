@@ -60,7 +60,7 @@
                 };
               }
             });
-        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="//easyself.github.com/react-native-website/blob/production/cndocs/javascript-environment.md" target="_blank" rel="noreferrer noopener">帮助改进此文档</a><h1 id="__docusaurus" class="postHeaderTitle">JavaScript环境</h1></header><article><div><span><p>在使用React Native时，你的JavaScript代码将会运行在两个不同的环境上：</p>
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="//www.github.com/easyself/react-native-website/blob/production/cndocs/javascript-environment.md" target="_blank" rel="noreferrer noopener">帮助改进此文档</a><h1 id="__docusaurus" class="postHeaderTitle">JavaScript环境</h1></header><article><div><span><p>在使用React Native时，你的JavaScript代码将会运行在两个不同的环境上：</p>
 <ul>
 <li>在iOS、Android的模拟器或是真机上，React Native使用的是<a href="http://trac.webkit.org/wiki/JavaScriptCore">JavaScriptCore</a>，也就是Safari所使用的JavaScript引擎。但是在iOS上JavaScriptCore并没有使用即时编译技术（JIT），因为在iOS中应用无权拥有可写可执行的内存页（因而无法动态生成代码）。</li>
 <li>在使用Chrome调试时，所有的JavaScript代码都运行在Chrome中，并且通过WebSocket与原生代码通信。此时的运行环境是<a href="https://code.google.com/p/v8/">V8引擎</a>。</li>

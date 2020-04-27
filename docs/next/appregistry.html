@@ -60,7 +60,7 @@
                 };
               }
             });
-        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="//easyself.github.com/react-native-website/blob/production/cndocs/appregistry.md" target="_blank" rel="noreferrer noopener">帮助改进此文档</a><h1 id="__docusaurus" class="postHeaderTitle">AppRegistry</h1></header><article><div><span><p><code>AppRegistry</code>所有 React Native 应用的 JS 入口。应用的根组件应当通过<code>AppRegistry.registerComponent</code>方法注册自己，然后原生系统才可以加载应用的代码包并且在启动完成之后通过调用<code>AppRegistry.runApplication</code>来真正运行应用。</p>
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="//www.github.com/easyself/react-native-website/blob/production/cndocs/appregistry.md" target="_blank" rel="noreferrer noopener">帮助改进此文档</a><h1 id="__docusaurus" class="postHeaderTitle">AppRegistry</h1></header><article><div><span><p><code>AppRegistry</code>所有 React Native 应用的 JS 入口。应用的根组件应当通过<code>AppRegistry.registerComponent</code>方法注册自己，然后原生系统才可以加载应用的代码包并且在启动完成之后通过调用<code>AppRegistry.runApplication</code>来真正运行应用。</p>
 <p>要“结束”一个应用并销毁视图的话，请调用<code>AppRegistry.unmountApplicationComponentAtRootTag</code>方法，参数为在<code>runApplication</code>中使用的标签名。它们必须严格匹配。</p>
 <p><code>AppRegistry</code>应当在<code>require</code>序列中尽可能早的被 require 到，以确保 JS 运行环境在其它模块之前被准备好。</p>
 <hr>

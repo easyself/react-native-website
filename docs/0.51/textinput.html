@@ -60,7 +60,7 @@
                 };
               }
             });
-        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="//easyself.github.com/react-native-website/blob/production/cndocs/textinput.md" target="_blank" rel="noreferrer noopener">帮助改进此文档</a><h1 id="__docusaurus" class="postHeaderTitle">TextInput</h1></header><article><div><span><p>TextInput是一个允许用户在应用中通过键盘输入文本的基本组件。本组件的属性提供了多种特性的配置，譬如自动完成、自动大小写、占位文字，以及多种不同的键盘类型（如纯数字键盘）等等。</p>
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="//www.github.com/easyself/react-native-website/blob/production/cndocs/textinput.md" target="_blank" rel="noreferrer noopener">帮助改进此文档</a><h1 id="__docusaurus" class="postHeaderTitle">TextInput</h1></header><article><div><span><p>TextInput是一个允许用户在应用中通过键盘输入文本的基本组件。本组件的属性提供了多种特性的配置，譬如自动完成、自动大小写、占位文字，以及多种不同的键盘类型（如纯数字键盘）等等。</p>
 <p>最简单的用法就是丢一个<code>TextInput</code>到应用里，然后订阅它的<code>onChangeText</code>事件来读取用户的输入。注意，从TextInput里取值这就是目前唯一的做法！也就是使用在<code>onChangeText</code>中用<code>setState</code>把用户的输入写入到state中，然后在需要取值的地方从this.state中取出值。它还有一些其它的事件，譬如<code>onSubmitEditing</code>和<code>onFocus</code>。一个简单的例子如下：</p>
 <div class="web-player"><pre><code class="hljs css javascript"><span class="hljs-keyword">import</span> React, { Component } <span class="hljs-keyword">from</span> <span class="hljs-string">'react'</span>;
 <span class="hljs-keyword">import</span> { TextInput } <span class="hljs-keyword">from</span> <span class="hljs-string">'react-native'</span>;

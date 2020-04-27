@@ -14,7 +14,7 @@ const packageJson = require('./package.json');
 
 const baseUrl = '/';
 const repoUrl = 'https://github.com/facebook/react-native';
-const cdnUrl = 'https://cdn.jsdelivr.net/gh/easyself/react-native-website@gh-pages/';
+const cdnUrl = 'https://cdn.jsdelivr.net/gh/easyself/react-native-website@1.0.0/';
 let communityRepos = [];
 try {
   communityRepos = require('./community-repos.json');

@@ -15,6 +15,7 @@
   "scripts": {
     "start": "docusaurus-start",
     "build": "docusaurus-build",
+    "deploy": "bash deploy.sh",
     "publish-gh-pages": "docusaurus-publish",
     "create-version": "node scripts/create-version",
     "rename-version": "docusaurus-rename-version",

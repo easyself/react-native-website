@@ -9,6 +9,9 @@ cd build/react-native
 # deploy to coding
 echo '.easyli.best' > CNAME  # 自定义域名
 
+git config --global user.name "johony"
+git config --global user.email "johony@users.noreply.github.com"
+
 if [ -z "$CODING_TOKEN" ]; then  # -z 字符串 长度为0则为true；$CODING_TOKEN 在 github仓库`Settings/Secrets`设置的私密环境变量
   codingUrl=git@e.coding.net:emu/rn.git
 else

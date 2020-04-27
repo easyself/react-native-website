@@ -1,4 +1,4 @@
-  #!/usr/bin/env sh
+#!/usr/bin/env sh
 
 # 确保脚本抛出遇到的错误
 set -e
@@ -9,7 +9,7 @@ cd build/react-native
 # deploy to coding
 echo '.easyli.best' > CNAME  # 自定义域名
 
-if [ -z "$CODING_TOKEN" ]; then  # -z 字符串 长度为0则为true；$CODING_TOKEN来自于github仓库`Settings/Secrets`设置的私密环境变量
+if [ -z "$CODING_TOKEN" ]; then  # -z 字符串 长度为0则为true；$CODING_TOKEN 在 github仓库`Settings/Secrets`设置的私密环境变量
   codingUrl=git@e.coding.net:emu/rn.git
 else
   codingUrl=https://ukvkkYTGki:${CODING_TOKEN}@e.coding.net/emu/rn.git

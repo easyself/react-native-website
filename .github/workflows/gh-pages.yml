@@ -41,7 +41,7 @@ jobs:
           CODING_TOKEN: ${{ secrets.CODING_TOKEN }} # coding 私密token
         run: |
           cd cnwebsite
-          yarn deploy
+          npm run deploy
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3

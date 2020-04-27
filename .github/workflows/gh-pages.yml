@@ -36,6 +36,11 @@ jobs:
           yarn install
           yarn build
 
+      - name: run deploy.sh # 部署到coding
+        env: # 设置环境变量
+          CODING_TOKEN: ${{ secrets.CODING_TOKEN }} # coding 私密token
+        run: npm run deploy
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:

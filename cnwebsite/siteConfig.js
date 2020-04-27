@@ -14,7 +14,7 @@ const packageJson = require('./package.json');
 
 const baseUrl = '/';
 const repoUrl = 'https://github.com/facebook/react-native';
-const cdnUrl = 'https://cdn.jsdelivr.net/gh/reactnativecn/react-native-website@gh-pages/';
+const cdnUrl = 'https://cdn.jsdelivr.net/gh/easyself/react-native-website@gh-pages/';
 let communityRepos = [];
 try {
   communityRepos = require('./community-repos.json');
@@ -25,7 +25,7 @@ try {
 const defaultVersionShown = '0.62';
 const siteConfig = {
   organizationName: 'reactnativecn',
-  cname: 'www.react-native.cn',
+  cname: 'easyself.github.io/react-native-website',
   cdnUrl,
   title: 'React Native 中文网',
   tagline: '使用React来编写原生应用的框架',
@@ -36,7 +36,7 @@ const siteConfig = {
   users: [],
   communityRepos,
   editUrl:
-    '//github.com/reactnativecn/react-native-website/blob/production/cndocs/',
+    '//easyself.github.com/react-native-website/blob/production/cndocs/',
   headerLinks: [
     {doc: 'getting-started', label: '文档'},
     // { blog: true, label: "博客" },
@@ -46,8 +46,8 @@ const siteConfig = {
     //   external: true,
     //   label: '博客',
     // },
-    {href: '//github.com/reactnativecn/react-native-website/issues', external: true, label: '讨论'},
-    {href: '//update.react-native.cn', label: '热更新', external: true},
+    {href: '//github.com/easyself/react-native-website/issues', external: true, label: '讨论'},
+    // {href: '//update.react-native.cn', label: '热更新', external: true},
     {page: 'about', label: '关于'},
     {search: true},
     {href: repoUrl, label: 'GitHub'},
@@ -70,15 +70,15 @@ const siteConfig = {
     primaryColor: 'black',
     secondaryColor: 'gray',
   },
-  algolia: {
-    apiKey: '7ab53ed26928639bae06ef0f6165f68b',
-    indexName: 'reactnative_cn',
-    algoliaOptions: {
+  //algolia: {
+  //  apiKey: '7ab53ed26928639bae06ef0f6165f68b',
+  //  indexName: 'reactnative_cn',
+  //  algoliaOptions: {
       // TODO
       // facetFilters: ["version:VERSION"],
-      hitsPerPage: 5,
-    },
-  },
+   //   hitsPerPage: 5,
+   // },
+  //},
   // facebookAppId: "1677033832619985",
   // twitter: "reactnative",
   markdownPlugins: [
@@ -89,7 +89,7 @@ const siteConfig = {
     theme: 'solarized-dark',
     version: packageJson.dependencies['highlight.js'].replace('^', '')
   },
-  gaTrackingId: 'UA-63485149-4',
+ // gaTrackingId: 'UA-63485149-4',
   scripts: [
     // 'https://snack.expo.io/embed.js',
     'https://cdn.jsdelivr.net/npm/focus-visible@5.0.2/dist/focus-visible.min.js',

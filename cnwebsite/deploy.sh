@@ -7,14 +7,14 @@ set -e
 cd build/react-native
 
 # deploy to coding
-echo 'rncn.easyli.best' > CNAME  # 自定义域名
+echo '.easyli.best' > CNAME  # 自定义域名
+
 if [ -z "$CODING_TOKEN" ]; then  # -z 字符串 长度为0则为true；$CODING_TOKEN来自于github仓库`Settings/Secrets`设置的私密环境变量
-  # codingUrl=git@git.dev.tencent.com:xugaoyi/xugaoyi.git
-  codingUrl=git@e.coding.net:xgy/xgy.git
+  codingUrl=git@e.coding.net:emu/rn.git
 else
-  # codingUrl=https://xugaoyi:${CODING_TOKEN}@git.dev.tencent.com/xugaoyi/xugaoyi.git
   codingUrl=https://ukvkkYTGki:${CODING_TOKEN}@e.coding.net/emu/rn.git
 fi
+
 git add -A
 git commit -m "${msg}"
 git push -f $codingUrl master # 推送到coding

@@ -115,7 +115,7 @@ class Footer extends React.Component {
           <p style={{color: 'inherit'}}>
             React Native中文网 &copy; {currentYear} 
           </p>
-          /**<p style={{color: 'inherit'}}>
+      {/**<p style={{color: 'inherit'}}>
             <a href="http://beian.miit.gov.cn/">鄂ICP备20002031号</a>
             <img
               src="https://img.alicdn.com/tfs/TB1..50QpXXXXX7XpXXXXXXXXXX-40-40.png"
@@ -124,9 +124,9 @@ class Footer extends React.Component {
             <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010602005511">
               浙公网安备 33010602005511号
             </a>
-          </p>*/
+          </p>*/}
         </section>
-        /**<script
+      {/**<script
           dangerouslySetInnerHTML={{
             __html: `
         (function(){
@@ -140,7 +140,7 @@ class Footer extends React.Component {
         `,
           }}
         />
-        <script src="https://cdn-city.livere.com/js/embed.dist.js" />*/
+        <script src="https://cdn-city.livere.com/js/embed.dist.js" />*/}
       </footer>
     );
   }

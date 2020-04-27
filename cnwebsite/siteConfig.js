@@ -25,7 +25,7 @@ try {
 const defaultVersionShown = '0.62';
 const siteConfig = {
   organizationName: 'reactnativecn',
-  cname: 'easyself.github.io/react-native-website',
+  cname: 'rn.easyli.best',
   cdnUrl,
   title: 'React Native 中文网',
   tagline: '使用React来编写原生应用的框架',

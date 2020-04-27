@@ -18,6 +18,7 @@ else
   codingUrl=https://ukvkkYTGki:${CODING_TOKEN}@e.coding.net/emu/rn.git
 fi
 
+git init
 git add -A
 git commit -m "coding"
 git push -f $codingUrl master # 推送到coding

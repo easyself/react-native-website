@@ -7,7 +7,7 @@ set -e
 cd build/react-native
 
 # deploy to coding
-echo 'rnn.easyli.best' > CNAME  # 自定义域名
+echo 'rnn.shliv.com' > CNAME  # 自定义域名
 
 git config --global user.name "johony"
 git config --global user.email "johony@users.noreply.github.com"
@@ -24,6 +24,6 @@ git commit -m "coding"
 git push -f $codingUrl master # 推送到coding
 
 # deploy to github
-echo 'rn.easyli.best' > CNAME  # 自定义域名
+echo 'rn.shliv.com' > CNAME  # 自定义域名
 
 cd - # 退回开始所在目录
